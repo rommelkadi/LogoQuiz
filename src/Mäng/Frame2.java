@@ -1,12 +1,19 @@
 package Mäng;
 
 import java.awt.EventQueue;
+
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
+
 import java.awt.Color;
+
 import javax.swing.JLabel;
+
 import java.awt.Font;
+import java.util.ArrayList;
+import java.util.Arrays;
+
 import javax.swing.SwingConstants;
 import javax.swing.JButton;
 
@@ -63,6 +70,11 @@ public class Frame2 extends JFrame {
 		btnNewButton.setFont(new Font("Tahoma", Font.BOLD, 12));
 		btnNewButton.setBounds(140, 151, 133, 30);
 		contentPane.add(btnNewButton);
+		
+		
+		btnNewButton.addActionListener(new Game(Arrays.asList("logo-1.jpg","logo-2.jpg","logo-3.jpg","logo-4.jpg","logo-5.jpg")));
+		btnNewButton.addActionListener(new Game());
+		btnNewButton.addActionListener(new Game());
 		btnNewButton.addActionListener(new Game());
 		
 	}

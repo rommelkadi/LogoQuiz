@@ -3,7 +3,6 @@ package Mäng;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 import java.util.Random;
 
@@ -18,6 +17,7 @@ import javax.swing.JTextField;
 
 public class Game implements ActionListener{
 	public static ArrayList<String> logod = new ArrayList<String>();
+	//public static int skoor = 0;
 
 	public ArrayList<String> getLogod() {
 		return logod;
@@ -26,14 +26,10 @@ public class Game implements ActionListener{
 	public Game() {}
 	
 	public Game(List<String> logod) {
-		this.logod.addAll(logod);
+		Game.logod.addAll(logod);
 	}
 	
 	public void actionPerformed (ActionEvent e) {
-
-		//ArrayList<String> logod = new ArrayList<String>();
-		//logod.addAll(Arrays.asList("logo-1.jpg","logo-2.jpg","logo-3.jpg","logo-4.jpg","logo-5.jpg"));
-		
 
 		Random suvaline = new Random();
 		int  rand = suvaline.nextInt(logod.size() - 1);
@@ -55,29 +51,32 @@ public class Game implements ActionListener{
 
 
 
-		if (logod.get(rand) == "logo-2.jpg" && s.equalsIgnoreCase("chrome")){
+		if (logod.get(rand) == "logo-1.jpg" && s.equalsIgnoreCase("chrome")){
 				System.out.println("CHROME ÕIGE");
-				logod.remove(rand);
+				logod.remove(rand);				
 			}
 
 		if (logod.get(rand) == "logo-3.jpg" && s.equalsIgnoreCase("android")){
 				System.out.println("ANDROID ÕIGE");
 				logod.remove(rand);
+				
 			}
 
 
 		if (logod.get(rand) == "logo-4.jpg" && s.equalsIgnoreCase("apple")){
 				System.out.println("APPLE ÕIGE");
 				logod.remove(rand);
+
 			}
 
 		if (logod.get(rand) == "logo-5.jpg" && s.equalsIgnoreCase("nike")){
 				System.out.println("NIKE ÕIGE");
 				logod.remove(rand);
 		}
-		if (logod.get(rand) == "logo-1.jpg" && s.equalsIgnoreCase("lays")){
+		if (logod.get(rand) == "logo-2.jpg" && s.equalsIgnoreCase("lays")){
 				System.out.println("LAYS ÕIGE");
 				logod.remove(rand);
+				
 				}
 	}
 

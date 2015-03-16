@@ -11,7 +11,6 @@ import java.awt.Color;
 import javax.swing.JLabel;
 
 import java.awt.Font;
-import java.util.ArrayList;
 import java.util.Arrays;
 
 import javax.swing.SwingConstants;

@@ -17,7 +17,7 @@ import javax.swing.JTextField;
 
 public class Game implements ActionListener{
 	public static ArrayList<String> logod = new ArrayList<String>();
-	//public static int skoor = 0;
+	public static int skoor = 0;
 
 	public ArrayList<String> getLogod() {
 		return logod;
@@ -33,7 +33,7 @@ public class Game implements ActionListener{
 
 		Random suvaline = new Random();
 		int  rand = suvaline.nextInt(logod.size() - 1);
-		System.out.println(rand);
+		//System.out.println(rand);
 
 		JPanel panel = new JPanel();
 
@@ -44,6 +44,7 @@ public class Game implements ActionListener{
 		panel.add(vastus);
 		ImageIcon pic = new ImageIcon("C:/Users/Kadi/workspace/LogoQuiz/src/Mäng/"+ logod.get(rand));
 		panel.add(new JLabel(pic));
+		
 
 		//Muutsin dialoogi
 
@@ -53,12 +54,18 @@ public class Game implements ActionListener{
 
 		if (logod.get(rand) == "logo-1.jpg" && s.equalsIgnoreCase("chrome")){
 				System.out.println("CHROME ÕIGE");
-				logod.remove(rand);				
+				logod.remove(rand);	
+				skoor +=1;
+				System.out.println("Skoor on:" + skoor);
+				
+				
 			}
 
 		if (logod.get(rand) == "logo-3.jpg" && s.equalsIgnoreCase("android")){
 				System.out.println("ANDROID ÕIGE");
 				logod.remove(rand);
+				skoor +=1;
+				System.out.println("Skoor on:" + skoor);
 				
 			}
 
@@ -66,17 +73,22 @@ public class Game implements ActionListener{
 		if (logod.get(rand) == "logo-4.jpg" && s.equalsIgnoreCase("apple")){
 				System.out.println("APPLE ÕIGE");
 				logod.remove(rand);
+				skoor +=1;
+				System.out.println("Skoor on:" + skoor);
 
 			}
 
 		if (logod.get(rand) == "logo-5.jpg" && s.equalsIgnoreCase("nike")){
 				System.out.println("NIKE ÕIGE");
 				logod.remove(rand);
+				skoor +=1;
+				System.out.println("Skoor on:" + skoor);
 		}
 		if (logod.get(rand) == "logo-2.jpg" && s.equalsIgnoreCase("lays")){
 				System.out.println("LAYS ÕIGE");
 				logod.remove(rand);
-				
+				skoor +=1;
+				System.out.println("Skoor on:" + skoor);
 				}
 	}
 

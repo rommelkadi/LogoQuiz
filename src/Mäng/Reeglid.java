@@ -17,12 +17,14 @@ public class Reeglid implements ActionListener{
 		frame3.setSize(250,150);
 		JLabel label1 = new JLabel("Mängus tuleb ära arvata,");
 		JLabel label2 = new JLabel("mis logoga on tegu");
-		JLabel label3 = new JLabel("ning kirjutada see vastavasse lahtrisse");
+		JLabel label3 = new JLabel("ning kirjutada see vastavasse lahtrisse.");
+		JLabel label4 = new JLabel("Iga õige vastus, annab ühe punkti!");
 		JPanel panel = new JPanel();
 		frame3.add(panel);
 		panel.add(label1);
 		panel.add(label2);
 		panel.add(label3);
+		panel.add(label4);
 		panel.setBackground(new Color(204, 255, 204));
 		label1.setHorizontalAlignment(SwingConstants.CENTER);
 		label2.setHorizontalAlignment(SwingConstants.CENTER);

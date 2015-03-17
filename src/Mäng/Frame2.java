@@ -71,10 +71,13 @@ public class Frame2 extends JFrame {
 		contentPane.add(btnNewButton);
 		
 		
-		btnNewButton.addActionListener(new Game(Arrays.asList("logo-1.jpg","logo-2.jpg","logo-3.jpg","logo-4.jpg","logo-5.jpg")));
+		btnNewButton.addActionListener(new Game(Arrays.asList("logo-1.jpg","logo-2.jpg","logo-3.jpg","logo-4.jpg","logo-5.jpg","logo-6.jpg","logo-7.jpg","logo-8.jpg","logo-9.jpg","logo-10.jpg","logo-11.jpg","logo-12.jpg","logo-13.jpg","logo-14.jpg","logo-15.jpg","logo-16.jpg","logo-17.jpg","logo-18.jpg","logo-19.jpg","logo-20.jpg")));
+		int arv = 9;
+		while(arv != 0){
 		btnNewButton.addActionListener(new Game());
-		btnNewButton.addActionListener(new Game());
-		btnNewButton.addActionListener(new Game());
+		arv -=1;
+		}
+
 		
 	}
 		
